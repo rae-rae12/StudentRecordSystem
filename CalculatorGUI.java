@@ -15,6 +15,9 @@ public class CalculatorGUI {
         frame.add(num2);
         frame.add(tnum1);
         frame.add(tnum2);
+        frame.setSize(350,200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
     
     
