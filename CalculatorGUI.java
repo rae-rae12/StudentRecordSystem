@@ -18,6 +18,7 @@ public class CalculatorGUI {
         JButton sub = new JButton("Subtract");
         JButton mul = new JButton("Multiply");
         JButton div = new JButton("Divide");
+        JButton clear = new JButton("Clear");
 
         frame.add(num1);
         frame.add(tnum1);
@@ -27,11 +28,16 @@ public class CalculatorGUI {
         frame.add(sub);
         frame.add(mul);
         frame.add(div);
+        frame.add(clear);
 
         add.addActionListener(e -> calculate(tnum1, tnum2, "+"));
         sub.addActionListener(e-> calculate(tnum1, tnum2, "-"));
         mul.addActionListener(e-> calculate(tnum1, tnum2, "*"));
         div.addActionListener(e-> calculate(tnum1, tnum2, "/"));
+        clear.addActionListener(e-> {
+            tnum1.setText("");
+            tnum2.setText("");
+        });
         
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
