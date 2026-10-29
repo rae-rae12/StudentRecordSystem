@@ -7,6 +7,12 @@ public class CalculatorGUI {
         frame.setLayout(new FlowLayout());
 
 
+        frame.add(num1);
+        frame.add(num2);
+        frame.add(tnum1);
+        frame.add(tnum2);
+
+        
     }
     
     
