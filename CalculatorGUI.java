@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 public class CalculatorGUI {
     //sample code
     public static void main (String[] args){
@@ -16,14 +15,8 @@ public class CalculatorGUI {
         frame.add(tnum1);
         frame.add(num2);
         frame.add(tnum2);
-<<<<<<< HEAD
         
         
-=======
-        frame.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 10));
-        frame.setVisible(true);
-    
->>>>>>> d8674feb6ce3f14c6767dbe605618a9a975eb44f
     }
     
     
